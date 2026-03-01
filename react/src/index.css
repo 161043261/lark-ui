@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+@import '../../styles/index.css';
+
+@theme {
+  --color-lark-white: #ffffff;
+  --color-lark-black: #000000;
+  --font-sans:
+    'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial;
+  --font-serif:
+    'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial;
+  --font-mono:
+    Menlo, 'Cascadia Code', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', Arial;
+  --color-lark-primary: #409eff;
+  --color-lark-primary-light-3: rgb(121, 187, 255);
+  --color-lark-primary-light-5: rgb(160, 207, 255);
+  --color-lark-primary-light-7: rgb(198, 226, 255);
+  --color-lark-primary-light-8: rgb(217, 236, 255);
+  --color-lark-primary-light-9: rgb(236, 245, 255);
+  --color-lark-primary-dark-2: rgb(51, 126, 204);
+  --color-lark-success: #67c23a;
+  --color-lark-success-light-3: rgb(149, 212, 117);
+  --color-lark-success-light-5: rgb(179, 225, 157);
+  --color-lark-success-light-7: rgb(209, 237, 196);
+  --color-lark-success-light-8: rgb(225, 243, 216);
+  --color-lark-success-light-9: rgb(240, 249, 235);
+  --color-lark-success-dark-2: rgb(82, 155, 46);
+  --color-lark-warning: #e6a23c;
+  --color-lark-warning-light-3: rgb(238, 190, 119);
+  --color-lark-warning-light-5: rgb(243, 209, 158);
+  --color-lark-warning-light-7: rgb(248, 227, 156);
+  --color-lark-warning-light-8: rgb(250, 236, 186);
+  --color-lark-warning-light-9: rgb(252, 245, 232);
+  --color-lark-warning-dark-2: rgb(182, 126, 46);
+  --color-lark-danger: #f56c6c;
+  --color-lark-danger-light-3: rgb(248, 152, 152);
+  --color-lark-danger-light-5: rgb(250, 182, 182);
+  --color-lark-danger-light-7: rgb(252, 211, 211);
+  --color-lark-danger-light-8: rgb(253, 226, 226);
+  --color-lark-danger-light-9: rgb(254, 240, 240);
+  --color-lark-danger-dark-2: rgb(196, 86, 86);
+  --color-lark-error: #f56c6c;
+  --color-lark-error-light-3: rgb(248, 152, 152);
+  --color-lark-error-light-5: rgb(250, 182, 182);
+  --color-lark-error-light-7: rgb(252, 211, 211);
+  --color-lark-error-light-8: rgb(253, 226, 226);
+  --color-lark-error-light-9: rgb(254, 240, 240);
+  --color-lark-error-dark-2: rgb(196, 86, 86);
+  --color-lark-info: #909399;
+  --color-lark-info-light-3: rgb(177, 179, 184);
+  --color-lark-info-light-5: rgb(200, 201, 204);
+  --color-lark-info-light-7: rgb(222, 223, 224);
+  --color-lark-info-light-8: rgb(233, 233, 235);
+  --color-lark-info-light-9: rgb(244, 244, 245);
+  --color-lark-info-dark-2: rgb(115, 118, 122);
+  --color-lark-bg: #ffffff;
+  --color-lark-bg-page: #f2f3f5;
+  --color-lark-bg-overlay: #ffffff;
+  --color-lark-text-primary: #303133;
+  --color-lark-text-regular: #606266;
+  --color-lark-text-secondary: #909399;
+  --color-lark-text-placeholder: #a8abb2;
+  --color-lark-text-disabled: #c0c4cc;
+  --color-lark-border: #dcdfe6;
+  --color-lark-border-light: #e4e7ed;
+  --color-lark-border-lighter: #ebeef5;
+  --color-lark-border-extra-light: #f2f6fc;
+  --color-lark-border-dark: #d4d7de;
+  --color-lark-border-darker: #cdd0d6;
+  --color-lark-fill: #f0f2f5;
+  --color-lark-fill-light: #f5f7fa;
+  --color-lark-fill-lighter: #fafafa;
+  --color-lark-fill-extra-light: #fafcff;
+  --color-lark-fill-dark: #ebedf0;
+  --color-lark-fill-darker: #e6e8eb;
+  --color-lark-fill-blank: #ffffff;
+  --color-lark-disabled-bg: #f5f7fa;
+  --color-lark-disabled-text: #a8abb2;
+  --color-lark-disabled-border: #e4e7ed;
+  --color-lark-overlay: rgba(0, 0, 0, 0.8);
+  --color-lark-overlay-light: rgba(0, 0, 0, 0.7);
+  --color-lark-overlay-lighter: rgba(0, 0, 0, 0.5);
+  --color-lark-mask: rgba(255, 255, 255, 0.9);
+  --color-lark-mask-extra-light: rgba(255, 255, 255, 0.3);
+  --color-lark-border-hover: #c0c4cc;
+  --color-lark-svg-monochrome-grey: #dcdfe6;
+}

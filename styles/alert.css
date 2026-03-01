@@ -1,0 +1,134 @@
+.lark-alert {
+  width: 100%;
+  min-height: 2.125rem;
+  /* 上下 0, 左右 1rem */
+  padding: 0 1rem;
+  position: relative;
+  margin-bottom: 0.25rem;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  border: 0.0625rem solid var(--color-lark-border-lighter);
+  transition: opacity var(--lark-transition-duration-fast);
+
+  .close-btn {
+    position: absolute;
+    right: 0.625rem;
+    /* top: 0; */
+    cursor: pointer;
+  }
+
+  /* ==================== Vue ==================== */
+  &.fade-enter-from,
+  &.fade-leave-to {
+    opacity: 0;
+  }
+
+  &.fade-enter-active,
+  &.fade-leave-active {
+    transition: opacity 200ms;
+  }
+
+  &.fade-enter-to,
+  &.fade-leave-from {
+    opacity: 1;
+  }
+
+  /* ==================== React ==================== */
+  &.fade-enter {
+    opacity: 0;
+  }
+
+  /* React, MUST write after .[prefix]-enter */
+  &.fade-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+
+  &.fade-exit {
+    opacity: 1;
+  }
+
+  /* React, MUST write after .[prefix]-exit */
+  &.fade-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+}
+
+.lark-alert--success.lark-alert--light {
+  background-color: var(--color-lark-success-light-9);
+  border-color: var(--color-lark-success-light-8);
+  color: var(--color-lark-success);
+}
+
+.lark-alert--success.lark-alert--dark {
+  background-color: var(--color-lark-success);
+  color: var(--color-lark-white);
+}
+
+.lark-alert--warning.lark-alert--light {
+  background-color: var(--color-lark-warning-light-9);
+  border-color: var(--color-lark-warning-light-8);
+  color: var(--color-lark-warning);
+}
+
+.lark-alert--warning.lark-alert--dark {
+  background-color: var(--color-lark-warning);
+  color: var(--color-lark-white);
+}
+
+.lark-alert--error.lark-alert--light {
+  background-color: var(--color-lark-error-light-9);
+  border-color: var(--color-lark-error-light-8);
+  color: var(--color-lark-error);
+}
+
+.lark-alert--error.lark-alert--dark {
+  background-color: var(--color-lark-error);
+  color: var(--color-lark-white);
+}
+
+.lark-alert--info.lark-alert--light {
+  background-color: var(--color-lark-info-light-9);
+  border-color: var(--color-lark-info-light-8);
+  color: var(--color-lark-info);
+}
+
+.lark-alert--info.lark-alert--dark {
+  background-color: var(--color-lark-info);
+  color: var(--color-lark-white);
+}
+
+.lark-alert__content {
+  display: flex;
+  align-items: center;
+}
+
+.lark-alert__icon {
+  /* Vertically centered */
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.75rem;
+}
+
+.lark-alert__message {
+  flex-grow: 1;
+}
+
+.lark-alert__title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.lark-alert__description {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.lark-alert.is-center {
+  justify-content: center;
+}

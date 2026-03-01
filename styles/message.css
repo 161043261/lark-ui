@@ -1,0 +1,63 @@
+.lark-message {
+  position: fixed;
+  left: 50%;
+  width: 15rem;
+  height: 2.5rem;
+  z-index: 8888;
+  /* margin-left: 11.875rem; */
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.3125rem;
+  transition:
+    transform 0.3s ease-out,
+    opacity 0.3s ease-out;
+
+  &.has-close .lark-message__content {
+    padding-right: 1.875rem;
+  }
+
+  .lark-message__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .lark-message__close .lark-icon {
+    cursor: pointer;
+  }
+
+  &.fade-up-enter-from,
+  &.fade-up-leave-to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  &.fade-up-enter,
+  &.fade-up-exit-active {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.lark-message--warning {
+  background-color: var(--color-lark-warning-light-9);
+  color: var(--color-lark-warning-dark-2);
+}
+
+.lark-message--success {
+  background-color: var(--color-lark-success-light-9);
+  color: var(--color-lark-success-dark-2);
+}
+
+.lark-message--info {
+  background-color: var(--color-lark-info-light-9);
+  color: var(--color-lark-info-dark-2);
+}
+
+.lark-message--error {
+  background-color: var(--color-lark-error-light-9);
+  color: var(--color-lark-error-dark-2);
+}

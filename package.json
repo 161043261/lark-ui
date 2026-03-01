@@ -1,0 +1,37 @@
+{
+  "name": "lark-ui",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "format": "pnpm format:react && pnpm format:vue && pnpm format:styles",
+    "prepare": "husky",
+    "dev:react": "cd ./packages/react && pnpm dev",
+    "build:react": "cd ./packages/react && pnpm build",
+    "lint:react": "cd ./packages/react && pnpm lint",
+    "preview:react": "cd ./packages/react && pnpm preview",
+    "format:react": "cd ./packages/react && pnpm format",
+    "dev:vue": "cd ./packages/vue && pnpm dev",
+    "build:vue": "cd ./packages/vue && pnpm build",
+    "lint:vue": "cd ./packages/vue && pnpm lint",
+    "preview:vue": "cd ./packages/vue && pnpm preview",
+    "format:vue": "cd ./packages/vue && pnpm format",
+    "format:styles": "prettier --write --experimental-cli ./packages/styles"
+  },
+  "keywords": [
+    "Component Library"
+  ],
+  "author": "github.com/161043261",
+  "license": "MIT",
+  "packageManager": "pnpm@10.20.0",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4"
+  },
+  "lint-staged": {
+    "*.{md,json,yml,yaml,html,css,js,jsx,ts,tsx,vue}": [
+      "pnpm format"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+.lark-form {
+  font-size: var(--lark-font-size-base);
+
+  .lark-form-item {
+    display: flex;
+    font-size: var(--lark-font-size-base);
+    margin-bottom: 1.125rem;
+
+    .lark-form-item__label {
+      display: inline-flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      /* flex: 0 0 auto; */
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+      font-size: var(--lark-font-size-base);
+      color: var(--color-lark-text-regular);
+      height: 2rem;
+      line-height: 2rem;
+      padding-right: 0.75rem;
+      box-sizing: border-box;
+      width: 8rem;
+    }
+
+    .lark-form-item__content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex: 1;
+      line-height: 2rem;
+      position: relative;
+      font-size: var(--lark-font-size-base);
+      min-width: 0;
+
+      .lark-form-item__error-msg {
+        padding-top: 0.125rem;
+        color: var(--color-lark-danger);
+        font-size: var(--lark-font-size-extra-small);
+        line-height: 1;
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+    }
+
+    &.is-error .lark-input__wrapper {
+      box-shadow: 0 0 0 0.0625rem var(--color-lark-danger) inset;
+    }
+
+    &.is-required > .lark-form-item__label::before {
+      content: "*";
+      color: var(--color-lark-danger);
+      margin-right: 0.25rem;
+    }
+  }
+}

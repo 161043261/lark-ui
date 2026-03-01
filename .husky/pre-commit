@@ -1,0 +1,41 @@
+# current_branch=$(git symbolic-ref --short HEAD)
+
+root=$(pwd)
+
+remove_pnpm_lock_files() {
+  rm -rf $root/packages/react/pnpm-lock.yaml
+  rm -rf $root/packages/vue/pnpm-lock.yaml
+}
+
+format_react() {
+  cd $root/packages/react
+  pnpm format
+}
+
+format_vue() {
+  cd $root/packages/vue
+  pnpm format
+}
+
+format_styles() {
+  cd $root
+  pnpm format:styles
+}
+
+# format_react
+# format_vue
+
+# pnpm exec lint-staged
+
+remove_pnpm_lock_files
+
+case "$(uname -s)" in
+  Linux*)
+    format_react
+    format_vue
+    format_styles
+    ;;
+  *)
+    pnpm exec lint-staged
+    ;;
+esac

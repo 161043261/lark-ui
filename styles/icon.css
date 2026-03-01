@@ -1,0 +1,16 @@
+.lark-icon {
+  position: relative;
+  display: inline-flex;
+  height: 1rem;
+  width: 1rem;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  line-height: 1rem;
+  font-size: inherit;
+}
+
+.lark-icon-tw {
+  @apply relative m-2.5 inline-flex h-4 w-4 items-center justify-center fill-current leading-4 text-inherit;
+  font-size: inherit;
+}
